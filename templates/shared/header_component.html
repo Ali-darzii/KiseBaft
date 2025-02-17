@@ -1,0 +1,139 @@
+{% load i18n %}
+{% get_current_language as Lang %}
+<header class="rn-header haeder-default header--sticky">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="logo-thumbnail logo-custom-css">
+                    <a class="logo-light" href="{% url 'index_page' %}"><img src="/static/images/logo/customLogo.png"
+                                                                 alt="nft-logo"></a>
+                    <a class="logo-dark" href="{% url 'index_page' %}"><img src="/static/images/logo/customLogo.png" alt="nft-logo"></a>
+                </div>
+                <div class="mainmenu-wrapper">
+                    <nav id="sideNav" class="mainmenu-nav d-none d-xl-block">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="mainmenu">
+                            <li class="">
+                                <a href="{% url 'index_page' %}">{% trans 'خانه' %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'about_us_page' %}">{% trans 'درباره ما' %}</a>
+                            </li>
+
+                            <li class=" ">
+                                <a class="down" id="scrollLink" href="#click">{%trans "محصولات" %}</a>
+                            </li>
+                            <li><a href="{% url 'contact_us_page' %}">{% trans "تماس با ما" %}</a></li>
+                            <li class="has-droupdown has-menu-child-item">
+                                <a href="#">لغة : Language</a>
+                                <ul class="submenu">
+                                    <li><a class="nnb self-live-expo" href="/fa">Persian</a></li>
+                                    <li><a class="nnb self-live-expo" href="/ar">Arabic</a></li>
+                                    <li><a class="nnb self-live-expo" href="/en">English</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="setting-option d-none d-lg-block">
+                    <div class="search-form-wrapper" >
+                        <input id="q" type="search" placeholder="{% trans 'اینجا بگردید' %}" aria-label="جستجو">
+                        <div class="search-icon">
+                            <button type="button" onclick="searchProduct('{{ Lang }}')"><i class="feather-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-option rn-icon-list d-block d-lg-none">
+                    <div class="icon-box search-mobile-icon">
+                        <button><i class="feather-search"></i></button>
+                    </div>
+                    <div class="large-mobile-blog-search">
+                        <div class="rn-search-mobile form-group">
+                            <button onclick="searchProductMobile('{{ Lang }}')" type="button" class="search-button"><i class="feather-search"></i></button>
+                            <input autocomplete="off" type="text" id="q-mobile-123" placeholder="{% trans 'اینجا بگردید' %}">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="setting-option mobile-menu-bar d-block d-xl-none">
+                    <div class="hamberger">
+                        <button class="hamberger-button">
+                            <i class="feather-menu"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="my_switcher" class="my_switcher setting-option">
+                    <ul>
+                        <li>
+                            <a href="javascript: void(0);" data-theme="light" class="setColor light">
+                                <img class="sun-image" src="/static/images/icons/sun-01.svg" alt="Sun images">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
+                                <img class="Victor Image" src="/static/images/icons/vector.svg" alt="Vector Images">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</header>
+<div id="popup" class="popup-mobile-menu">
+    <div class="inner">
+        <div class="header-top">
+            <div class="logo logo-custom-css">
+                <a class="logo-light" href="{% url 'index_page' %}"><img src="/static/images/logo/customLogo.png"
+                                                             alt="nft-logo"></a>
+                <a class="logo-dark" href="{% url 'index_page' %}"><img src="/static/images/logo/customLogo.png" alt="nft-logo"></a>
+            </div>
+            <div class="close-menu">
+                <button class="close-button">
+                    <i class="feather-x"></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <!-- Start Mainmanu Nav -->
+            <ul class="mainmenu">
+                <li>
+                    <a href="{% url 'index_page' %}">{% trans 'خانه' %}</a>
+                </li>
+                <li><a href="{% url 'about_us_page' %}">{% trans 'درباره ما' %}</a>
+                </li>
+                <li class="">
+                    <a class="nav-link its_new" id="scrollLink2" href="#click">{% trans 'محصولات' %}</a>
+                </li>
+                <li><a href="{% url 'contact_us_page' %}">{% trans 'تماس با ما' %}</a></li>
+               {% comment %} <li class="has-droupdown has-menu-child-item">
+                    <a class="nav-link its_new" href="#"> زبان : Language </a>
+                    <ul class="submenu">
+                        <li><a class="live-expo" href="explore-live.html"></a></li>
+                        <li><a class="live-expo" href="explore-live-two.html"></a></li>
+                        <li><a class="live-expo" href="explore-live-three.html"></a></li>
+                    </ul>
+
+                </li>{% endcomment %}
+                <li class="has-droupdown has-menu-child-item">
+                                <a href="#">زبان : Language</a>
+                                <ul class="submenu">
+                                    <li><a class="nnb self-live-expo" href="/fa">Persian</a></li>
+                                    <li><a class="nnb self-live-expo" href="/ar">Arabic</a></li>
+                                    <li><a class="nnb self-live-expo" href="/en">English</a></li>
+                                </ul>
+
+                            </li>
+            </ul>
+            <!-- End Mainmanu Nav -->
+        </nav>
+    </div>
+</div>

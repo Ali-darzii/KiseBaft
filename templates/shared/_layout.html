@@ -1,0 +1,41 @@
+{% load render_partial %}
+{% load i18n %}
+{% get_current_language as Lang%}
+<!DOCTYPE html>
+<html dir="{% if Lang == 'en' %}ltr{% else %}rtl{% endif %}" lang="fa-IR"
+      class="sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth no-csscolumns-breakbefore no-csscolumns-breakafter no-csscolumns-breakinside flexbox picture srcset webworkers">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-style-mode" content="1">
+    <meta name="robots" content="noindex, follow">
+    {% block meta %}
+
+    {% endblock %}
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo/customLogo.png">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <script src="/static/js/vendor/jquery.js"></script>
+    {% block header_references %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body class="template-color-1 nft-body-connect active-dark-mode">
+
+
+{% render_partial 'home.views.header_component' %}
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+{% render_partial 'home.views.footer_component' %}
+
+
+{% block footer_references %}
+    
+{% endblock %}
+<script src="/static/js/custom.js"></script>
+</body>
+
+</html>

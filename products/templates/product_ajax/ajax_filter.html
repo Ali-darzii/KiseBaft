@@ -1,0 +1,26 @@
+{% load i18n %}
+{% load poll_extras %}
+{% for product in products %}
+    <div class="col-5 col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up"
+         data-sal-delay="{{ forloop.counter|calculate_box_delay }}" data-sal-duration="800">
+        <div class="product-style-one no-overlay with-placeBid">
+            <div class="card-thumbnail">
+                <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}" alt="NFT_portfolio"></a>
+            </div>
+            {#                            <div class="product-share-wrapper"></div>#}
+            <a href="{{ product.get_absolute_url }}"><span class="product-name mt--25">{{ product.title }}</span></a>
+            <div class="latest-bid ">{% trans 'برای اطلاعات بیشتر کلیک کنید' %}</div>
+            <div class="bid-react-area">
+                <div class="last-bid">. . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+{#<div class="" id="spinner-middle">#}
+{#    <button type="submit" class="btn btn-primary fofo dis-n">#}
+{#        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>#}
+{#        {% trans '...لودینگ' %}#}
+{#    </button>#}
+{#</div>#}
+{#{{ product_count|json_script:'json-total' }}#}
