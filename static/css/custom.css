@@ -1,0 +1,199 @@
+.filter-blur{
+    filter: blur(4px);
+}
+
+/*spinnerStart*/
+
+@media only screen and (min-width: 1184px) {
+    .lds-res{
+    right:50% ;
+}
+}
+
+@media only screen and (max-width: 1184px) {
+    .lds-res{
+    right:46% ;
+}
+}
+
+.lds-ring {
+  display: inline-block;
+  position: fixed;
+  width: 60px;
+  top:50%;
+  height: 80px;
+  z-index: 10;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*SpinnerEnd*/
+
+
+.self-alert {
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    border: rgb(246, 122, 40) solid 3px;
+    padding: 10px;
+    background-color: rgb(246, 122, 40);
+    color: rgb(98, 49, 16)!important;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+}
+
+.self-red::placeholder{
+    color: red !important;
+}
+
+.self-live-expo {
+    position: relative;
+}
+
+.self-live-expo::before {
+    width: 16px;
+    height: 16px;
+    background: var(--color-primary);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    content: "";
+    transform: translateY(-50%);
+    border-radius: 100%;
+    opacity: 1;
+    animation: customOne 1s infinite;
+}
+
+.self-live-expo::after {
+    width: 16px;
+    height: 16px;
+    border: 4px solid var(--color-primary);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    content: "";
+    transform: translateY(-50%);
+    border-radius: 100%;
+    opacity: 1;
+    animation: customOne 1.2s infinite;
+}
+
+.nnb {
+    text-align: left !important;
+    direction: ltr !important;
+}
+.pinp{
+    margin-top: 20px;
+}
+.load-more-btn {
+    margin-top: 20px;
+    position: absolute !important;
+    width: 50% !important;
+    right: 25% !important;
+}
+
+.spinner-btn {
+    margin-top: 25px;
+    margin-bottom: 3px;
+    width: 250px !important;
+}
+.fofo{
+    background-color:#00a3ff ;
+    border-radius: 10px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+    position: relative !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 50% !important;
+    padding: 10px !important;
+
+}
+
+.osos{
+    color: #FFFFFF;
+}
+
+.lol {
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.filter-btn {
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+.loading-btn {
+    margin-top: 20px;
+    margin-bottom: 100px !important;
+    position: absolute;
+    right: 43% !important;
+
+}
+
+.font-size {
+    font-size: 10px !important;
+}
+
+.dis-n {
+    display: none !important;
+}
+
+.div-contents{
+    display: contents;
+}
+
+.video-container {
+    width: 70%; /* Set the width to 70% */
+    height: 40% !important;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 40px !important;
+    position: relative;
+    border-radius: 20px; /* Add border radius */
+    overflow: hidden; /* Ensure content within the container respects border-radius */
+}
+
+.index-video {
+    width: 100%; /* Make the video element span the entire width of its container */
+    height: auto; /* Allow the video to adjust its height based on its aspect ratio */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .video-container {width: 90%}
+}
+

@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-03 13:52+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: Gooni_project/settings.py:126
+msgid "Persian"
+msgstr ""
+
+#: Gooni_project/settings.py:127
+msgid "English"
+msgstr ""
+
+#: Gooni_project/settings.py:128
+msgid "Arabic"
+msgstr ""
+
+#: about_us/templates/about_us/about_us_template.html:28
+#, fuzzy
+#| msgid "درباره ما | فروشگاه گونی بافت"
+msgid "درباره ما | فروشگاه کیسه بافت"
+msgstr "عنا | متجر الأكياس المنسوجة"
+
+#: about_us/templates/about_us/about_us_template.html:104
+msgid "آمار سایت  گونی بافت"
+msgstr "إحصائيات موقع غوني بافت"
+
+#: about_us/templates/about_us/about_us_template.html:112
+msgid "تعداد بازدید کنندگان سایت"
+msgstr "عدد زوار الموقع"
+
+#: about_us/templates/about_us/about_us_template.html:119
+msgid "تعداد محصولات سایت"
+msgstr "عدد منتجات الموقع"
+
+#: contact_us/templates/contact_us/contact_us_template.html:26
+#, fuzzy
+#| msgid "آمار سایت  گونی بافت"
+msgid "صفحه تماس با ما | سایت کیسه بافت"
+msgstr "إحصائيات موقع شنطة بافت"
+
+#: contact_us/templates/contact_us/contact_us_template.html:35
+#: templates/shared/header_component.html:26
+#: templates/shared/header_component.html:116
+msgid "تماس با ما"
+msgstr "اتصل بنا"
+
+#: contact_us/templates/contact_us/contact_us_template.html:39
+msgid "صفحه اصلی"
+msgstr "الصفحة الرئيسية"
+
+#: contact_us/templates/contact_us/contact_us_template.html:41
+msgid "با ما تماس بگیرید"
+msgstr "اتصل بنا"
+
+#: home/templates/home/index.html:9
+#, fuzzy
+#| msgid "خانه | فروشگاه گونی بافت"
+msgid "خانه | فروشگاه کیسه  بافت"
+msgstr "الصفحة الرئيسية | متجر الأكياس المنسوجة"
+
+#: home/templates/home/index.html:99
+msgid "جدیدترین موارد"
+msgstr "أحدث العناصر"
+
+#: home/templates/home/index.html:105
+msgid "نمایش همه"
+msgstr "عرض الكل"
+
+#: home/templates/home/index.html:123 home/templates/home/index.html:228
+#: home/templates/home/search.html:37
+#: products/templates/product_ajax/ajax_filter.html:12
+#: products/templates/products/product_detail_template.html:155
+#: products/templates/products/product_list_template.html:136
+msgid "برای اطلاعات بیشتر کلیک کنید"
+msgstr "انقر للحصول على مزيد من المعلومات"
+
+#: home/templates/home/index.html:151
+#: products/templates/products/product_list_template.html:59
+msgid "فیلتر"
+msgstr "منقي"
+
+#: home/templates/home/index.html:162
+#: products/templates/products/product_list_template.html:70
+msgid "کیسه درجه 2"
+msgstr "حقيبة الصف 2"
+
+#: home/templates/home/index.html:164 home/templates/home/index.html:177
+#: home/templates/home/index.html:190
+#: products/templates/products/product_list_template.html:72
+#: products/templates/products/product_list_template.html:85
+#: products/templates/products/product_list_template.html:98
+msgid "همه"
+msgstr "الجميع"
+
+#: home/templates/home/index.html:175
+#: products/templates/products/product_list_template.html:83
+msgid "کیسه ساده"
+msgstr "حقيبة بسيطة"
+
+#: home/templates/home/index.html:188
+#: products/templates/products/product_list_template.html:96
+msgid "نوع محصول"
+msgstr "نوع المنتج"
+
+#: home/templates/home/index.html:200
+#: products/templates/products/product_list_template.html:108
+msgid "مرتب سازی بر اساس"
+msgstr "ترتيب حسب"
+
+#: home/templates/home/index.html:202
+#: products/templates/products/product_list_template.html:110
+msgid "جدید ترین"
+msgstr "الأحدث"
+
+#: home/templates/home/index.html:203
+#: products/templates/products/product_list_template.html:111
+msgid "پر بازدید ترین"
+msgstr "أكثر زيارة"
+
+#: home/templates/home/index.html:244
+msgid "...لودینگ"
+msgstr "...لودینگ"
+
+#: home/templates/home/search.html:8
+msgid "نتیجه سرچ با"
+msgstr "نتائج البحث مع"
+
+#: home/templates/home/search.html:12
+#: products/templates/products/product_list_template.html:41
+#: templates/shared/header_component.html:17
+#: templates/shared/header_component.html:109
+msgid "خانه"
+msgstr "بيت"
+
+#: home/templates/home/search.html:23
+#, fuzzy
+#| msgid "محصولات ما"
+msgid "محصولی با اسم"
+msgstr "منتجاتنا"
+
+#: home/templates/home/search.html:23
+msgid "یافت نشد"
+msgstr "غير معثور عليه"
+
+#: products/models.py:46
+msgid "نام محصول"
+msgstr "اسم المنتج"
+
+#: products/templates/products/product_detail_template.html:28
+#, fuzzy
+#| msgid "جزییات محصول | سایت گونی بافت"
+msgid "جزییات محصول | سایت کیسه بافت"
+msgstr "تفاصيل المنتج موقع غوني بافت"
+
+#: products/templates/products/product_detail_template.html:107
+msgid "سفارش"
+msgstr "طلب"
+
+#: products/templates/products/product_detail_template.html:113
+msgid "جزئیات"
+msgstr "التفاصيل"
+
+#: products/templates/products/product_detail_template.html:124
+msgid "تمامی محصولات به صورت عمده به فروش می رسد وبرای بر قراری ارتباط با ما"
+msgstr "تباع جميع المنتجات بكميات كبيرة ولترتيب الاتصال معنا"
+
+#: products/templates/products/product_detail_template.html:139
+msgid "موارد مرتبط"
+msgstr "الأصناف المتعلقة"
+
+#: products/templates/products/product_list_template.html:30
+msgid "لیست محصولات | فروشگاه گونی بافت"
+msgstr "قائمة المنتجات متجر الأكياس المنسوجة"
+
+#: products/templates/products/product_list_template.html:37
+#: products/templates/products/product_list_template.html:43
+msgid "محصولات ما"
+msgstr "منتجاتنا"
+
+#: products/templates/products/product_list_template.html:156
+#, fuzzy
+#| msgid "محصولات ما"
+msgid "محصولات بیشتر"
+msgstr "منتجاتنا"
+
+#: templates/404.html:26
+msgid "صفحه مورد نظر یافت نشد"
+msgstr "الصفحة المطلوبة لا يمكن العثور عليه"
+
+#: templates/404.html:35
+msgid "صفحه پیدا نشد!"
+msgstr "الصفحة غير موجودة!"
+
+#: templates/404.html:36
+msgid "صفحه ای که دنبالش هستید یافت نشد"
+msgstr "لم يتم العثور على الصفحة التي تبحث عنها"
+
+#: templates/404.html:37
+msgid "بازگشت به خانه"
+msgstr "العودة إلى المنزل"
+
+#: templates/shared/footer_component.html:32
+msgid "راه های ارتباطی"
+msgstr "طرق التواصل"
+
+#: templates/shared/footer_component.html:46
+msgid "ادرس مغازه"
+msgstr "عنوان المحل"
+
+#: templates/shared/footer_component.html:48
+msgid "بازار بزرگ تهران,"
+msgstr "بازار طهران الكبير,"
+
+#: templates/shared/footer_component.html:49
+msgid "خیابان ۱۵ خرداد,"
+msgstr "15 شارع خرداد،"
+
+#: templates/shared/footer_component.html:50
+msgid "رو به روی خیابان پامنار,"
+msgstr "مقابل شارع بامنار،"
+
+#: templates/shared/footer_component.html:51
+msgid "سرای جعفری,"
+msgstr "ساراي جعفري،"
+
+#: templates/shared/footer_component.html:52
+msgid "پلاک ۱۷"
+msgstr "رقم 17"
+
+#: templates/shared/footer_component.html:60
+msgid "شرایط فروش"
+msgstr "شروط البيع"
+
+#: templates/shared/footer_component.html:63
+msgid "صورت عمده به"
+msgstr "وجه رئيسي ل"
+
+#: templates/shared/footer_component.html:64
+msgid "فروش می رسد"
+msgstr "قد بيع"
+
+#: templates/shared/footer_component.html:77
+msgid "©1401. تمامی حقوق محفوظ است "
+msgstr "©1401. كل الحقوق محفوظة"
+
+#: templates/shared/footer_component.html:79
+msgid "شرایط"
+msgstr "شروط"
+
+#: templates/shared/footer_component.html:80
+msgid "حریم خصوصی"
+msgstr "خصوصية"
+
+#: templates/shared/header_component.html:20
+#: templates/shared/header_component.html:111
+msgid "درباره ما"
+msgstr "معلومات عنا"
+
+#: templates/shared/header_component.html:24
+#: templates/shared/header_component.html:114
+msgid "محصولات"
+msgstr "منتجات"
+
+#: templates/shared/header_component.html:44
+#: templates/shared/header_component.html:57
+msgid "اینجا بگردید"
+msgstr "انظر هنا"
+
+#, fuzzy
+#~| msgid "برای اطلاعات بیشتر کلیک کنید"
+#~ msgid "اینجا کلیک کنید"
+#~ msgstr "انقر للحصول على مزيد من المعلومات"
+
+#, fuzzy
+#~| msgid "بررسی محصولات"
+#~ msgid "تمامی محصولات به"
+#~ msgstr "تقييم المنتج"
+
+#~ msgid "بررسی محصولات"
+#~ msgstr "تقييم المنتج"
+
+#, fuzzy
+#~| msgid "پر بازدید ترین"
+#~ msgid "بازدید اخیر"
+#~ msgstr "أكثر زيارة"
+
+#~ msgid "فیلتر کن"
+#~ msgstr "منقي"
+
+#~ msgid "محصول دیگری وجود ندارد!"
+#~ msgstr "لا يوجد منتج آخر!"

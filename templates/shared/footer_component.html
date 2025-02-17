@@ -1,0 +1,109 @@
+{% load i18n %}
+{% get_current_language as Lang %}
+
+<div class="rn-footer-one rn-section-gap bg-color--1 mt--100 mt_md--80 mt_sm--80" id="footer_">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="widget-content-wrapper">
+                    <div class="footer-left">
+                        <div class="footer-logo-thumbnail logo-custom-css">
+                            <a class="logo-light" href="{% url 'index_page' %}"><img src="/static/images/logo/kisebaft.png" alt="nft-logo"></a>
+                            <a class="logo-dark" href="{% url 'index_page' %}"><img src="/static/images/logo/kisebaft.png" alt="nft-logo"></a>
+                        </div>
+                        <p class="rn-footer-describe">
+                        </p>
+                    </div>
+                    <div class="widget-bottom mt--40 pt--40">
+                        <h6 class="title"> </h6>
+                        <div class="input-group">
+                            <div class="input-group-append">
+                            </div>
+                        </div>
+                        <div class="newsletter-dsc">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
+                <div class="footer-widget widget-quicklink">
+                    <h6 class="widget-title">{% trans 'راه های ارتباطی' %}</h6>
+                    <ul class="footer-list-one">
+                        <li class="single-list"><a href="#">0912-299-1012</a></li>
+                        <li class="single-list"><a href="#">0912-411-2942</a></li>
+                        <li class="single-list"><a href="#">0912-240-8784</a></li>
+                        <li class="single-list"><a href="#">021-551-531-94</a></li>
+                        <li class="single-list"><a href="#">021-556-147-21</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+                <div class="footer-widget widget-information">
+                    <h6 class="widget-title">{% trans 'ادرس مغازه' %}</h6>
+                    <ul class="footer-list-one">
+                        <li class="single-list"><a href="#">{% trans 'بازار بزرگ تهران,' %}</a></li>
+                        <li class="single-list"><a href="#">{% trans 'خیابان ۱۵ خرداد,' %}</a></li>
+                        <li class="single-list"><a href="#">{% trans 'رو به روی خیابان پامنار,' %}</a></li>
+                        <li class="single-list"><a href="#">{% trans 'سرای جعفری,' %}</a></li>
+                        <li class="single-list"><a href="#">{% trans 'پلاک ۱۷' %}</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+                <div class="footer-widget widget-information">
+                    <h6 class="widget-title">{% trans 'شرایط فروش' %}</h6>
+                    <ul class="footer-list-one">
+                        <li class="single-list"><a href="#"> {% if Lang == 'fa' %}  تمامی محصولات به {% elif Lang == 'en' %} All products to {% else %}جميع المنتجات ل {% endif %}</a></li>
+                        <li class="single-list"><a href="#"> {% trans 'صورت عمده به' %} </a></li>
+                        <li class="single-list"><a href="#"> {% trans 'فروش می رسد' %} </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-right-one ptb--20 bg-color--1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="copyright-left">
+                    <span>{% trans '©1401. تمامی حقوق محفوظ است ' %}<a target="_blank" href="https://www.rtl-theme.com/author/saeedf436/products/"></a></span>
+                    <ul class="privacy">
+                        <li><a href="terms-condition.html"></a></li>
+                        <li><a href="privacy-policy.html"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="copyright-right">
+                    <ul class="social-copyright">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mouse-cursor cursor-outer" style="visibility: visible; transform: translate(1175px, 274px);"></div>
+<div class="mouse-cursor cursor-inner" style="visibility: visible; transform: translate(1175px, 303px);"></div>
+<div class="rn-progress-parent rn-backto-top-active">
+    <svg class="rn-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 124.139px;"></path>
+    </svg>
+</div>
+
+
+
+
+

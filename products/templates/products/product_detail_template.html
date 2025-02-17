@@ -1,0 +1,209 @@
+{% extends 'shared/_layout.html' %}
+{% load i18n %}
+{% load poll_extras %}
+{% get_current_language as Lang %}
+{% block meta %}
+
+{% endblock %}
+{% block header_references %}
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png">
+    <!-- CSS
+    ============================================ -->
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="/static/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/vendor/slick.css">
+    <link rel="stylesheet" href="/static/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="/static/css/vendor/nice-select.css">
+    <link rel="stylesheet" href="/static/css/plugins/feature.css">
+    <link rel="stylesheet" href="/static/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="/static/css/vendor/odometer.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/static/fonts/styles-fa-num/iran-yekan.css">
+    <link rel="stylesheet" href="/static/fonts/styles-fa-num/azarmehr.css">
+    <link rel="stylesheet" href="/static/css/rtl-style.css">
+{% endblock %}
+{% block title %}
+    
+    {% if Lang == 'fa' %}
+جزییات محصول | سایت کیسه بافت
+    {% elif Lang == 'en' %}
+    Product details | ksie baft site
+    {% else %}
+        تفاصيل المنتج | کیسه بافت
+    {% endif %}
+    
+{% endblock %}
+{% block content %}
+    <div class="product-details-area rn-section-gapTop">
+        <div class="container">
+            <div class="row g-5">
+                <!-- product image area -->
+
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="product-tab-wrapper rbt-sticky-top-adjust" style="top: 100px;">
+                        <div class="pd-tab-inner">
+{#                            <div class="nav rn-pd-nav rn-pd-rt-content nav-pills" id="v-pills-tab" role="tablist"#}
+{#                                 aria-orientation="vertical">#}
+{##}
+{#                                {% for gallery in product_gallery_group %}#}
+{#                                    <button class="nav-link {% if forloop.first %} active {% endif %}"#}
+{#                                            id="v-pills-home-tab{{ forloop.counter }}" data-bs-toggle="pill"#}
+{#                                            data-bs-target="#v-pills-home{{ forloop.counter }}" type="button" role="tab"#}
+{#                                            aria-controls="v-pills-home{{ forloop.counter }}"#}
+{#                                            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">#}
+{#                                    <span class="rn-pd-sm-thumbnail">#}
+{#                                        <img src="{{ gallery.image.url }}" alt="Nft_Profile">#}
+{#                                    </span>#}
+{#                                    </button>#}
+{#                                {% endfor %}#}
+{#                            </div>#}
+{#                            <div class="tab-content rn-pd-content" id="v-pills-tabContent">#}
+{#                                {% for gallery in product_gallery_group %}#}
+{#                                    <div class="tab-pane fade {% if forloop.first %} active show {% endif %}"#}
+{#                                         id="v-pills-home{{ forloop.counter }}" role="tabpanel"#}
+{#                                         aria-labelledby="v-pills-home-tab{{ forloop.counter }}">#}
+{#                                        <div class="rn-pd-thumbnail">#}
+{#                                            <img src="{{ gallery.image.url }}" alt="Nft_Profile">#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                {% endfor %}#}
+{#                            </div>#}
+                            {# NEW #}
+                            <div class="nav rn-pd-nav rn-pd-rt-content nav-pills" id="v-pills-tab" role="tablist"
+                                 aria-orientation="vertical">
+                                    <button class="nav-link active "
+                                            id="v-pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-home" type="button" role="tab"
+                                            aria-controls="v-pills-home"
+                                            aria-selected="true">
+                                    <span class="rn-pd-sm-thumbnail">
+                                        <img src="{{ product.image.url }}" alt="Nft_Profile">
+                                    </span>
+                                    </button>
+                            </div>
+
+                            <div class="tab-content rn-pd-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade active show"
+                                         id="v-pills-home" role="tabpanel"
+                                         aria-labelledby="v-pills-home-tab">
+                                        <div class="rn-pd-thumbnail">
+                                            <img src="{{ product.image.url }}" alt="Nft_Profile">
+                                        </div>
+                                    </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- product image area end -->
+
+                <div class="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
+                    <div class="rn-pd-content-area">
+                        <div class="pd-title-area">
+                            <h4 class="title">{{ product.title }}</h4>
+                        </div>
+                        <div class="rn-bid-details">
+                            <div class="tab-wrapper-one">
+                                <nav class="tab-button-one">
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-profile" type="button" role="tab"
+                                                aria-controls="nav-profile" aria-selected="true">{% trans 'سفارش' %}
+                                        </button>
+
+                                        <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-home" type="button" role="tab"
+                                                aria-controls="nav-home"
+                                                aria-selected="false">{% trans 'جزئیات' %}
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content rn-bid-content" id="nav-tabContent">
+                                    <div class="tab-pane fade" id="nav-home" role="tabpanel"
+                                         aria-labelledby="nav-home-tab">
+                                        <p class="pinp">{{ product.descriptions }}</p>
+                                    </div>
+                                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
+                                         aria-labelledby="nav-profile-tab">
+                                        <p class="pinp"> {% trans 'تمامی محصولات به صورت عمده به فروش می رسد وبرای بر قراری ارتباط با ما' %}  <a id="scrollLink5" href="#footer_">{% if Lang == 'en' %} click here {% elif Lang == 'fa'%}  اینجا کلیک کنید{% else %} انقر هنا {% endif %}</a>  </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="rn-new-items rn-section-gapTop">
+                <div class="container">
+                    <div class="row mb--30 align-items-center">
+                        <div class="col-12">
+                            <h3 class="title mb--0 sal-animate" data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800">{% trans 'موارد مرتبط' %}</h3>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        {% for product in related_products %}
+
+                            <div class="col-5 col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up"
+                                 data-sal-delay="{{ forloop.counter|calculate_box_delay }}" data-sal-duration="800">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}"
+                                                                                      alt="NFT_portfolio"></a>
+                                    </div>
+                                    {#                            <div class="product-share-wrapper"></div>#}
+                                    <a href="{{ product.get_absolute_url }}"><span
+                                            class="product-name mt--25">{{ product.title }}</span></a>
+                                    <div class="latest-bid ">{% trans 'برای اطلاعات بیشتر کلیک کنید' %}</div>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+{% endblock %}
+{% block footer_references %}
+    <script src="/static/js/vendor/jquery.js"></script>
+    <script src="/static/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="/static/js/vendor/jquery-ui.js"></script>
+    <script src="/static/js/vendor/modernizer.min.js"></script>
+    <script src="/static/js/vendor/feather.min.js"></script>
+    <script src="/static/js/vendor/slick.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/sal.min.js"></script>
+    <script src="/static/js/vendor/particles.js"></script>
+    <script src="/static/js/vendor/jquery.style.swicher.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/vendor/count-down.js"></script>
+    <script src="/static/js/vendor/isotop.js"></script>
+    <script src="/static/js/vendor/imageloaded.js"></script>
+    <script src="/static/js/vendor/backtoTop.js"></script>
+    <script src="/static/js/vendor/odometer.js"></script>
+    <script src="/static/js/vendor/jquery-appear.js"></script>
+    <script src="/static/js/vendor/scrolltrigger.js"></script>
+    <script src="/static/js/vendor/jquery.custom-file-input.js"></script>
+    <script src="/static/js/vendor/savePopup.js"></script>
+    <script src="/static/js/vendor/vanilla.tilt.js"></script>
+
+    <!-- main JS -->
+    <script src="/static/js/main.js"></script>
+    <!-- Meta Mask  -->
+    <script src="/static/js/vendor/web3.min.js"></script>
+    <script src="/static/js/vendor/maralis.js"></script>
+    <script src="/static/js/vendor/nft.js"></script>
+    <script>const lang = '{{ Lang }}' </script>
+{% endblock %}
